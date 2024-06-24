@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciência & Quadrinhos</title>
+  <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+    <section id="container_main">
+        <div id="container_card">
+            <div id="card">
+                <div id="face"> <!--FACE DO CARD-->
+                    <div id="person_image">
+                        <img src="#" id="image" width="97%">
+                    </div>
+                    <br>
+                    <span id="title_person">???</span>
+                </div>
+                <div id="back"> <!--BACK DO CARD-->
+                    <img src="/Icons/arrow.svg" id="arrow">
+                    <br>
+                    <ol id="list"></ol>
+                </div>
+            </div>
+        </div>
+        <section id="container_events"> <!--EVENTOS DOS BOTOES-->
+            <p id="alert_mensage"></p>
+            <button id="btn_jump" onclick="jump()">PULAR</button>
+            <button id="btn_suggestion" onclick="suggestion()">DICA</button>
+            <input type="text" id="btn_palpit" placeholder="Seu palpite" onkeydown="palpit()">
+            <button id="btn_show" onclick="show()">MOSTRAR</button>
+        </section>
+    </section>
+
+    <script src="perfil.js"></script>
+</body>
